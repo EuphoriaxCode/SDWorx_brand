@@ -3,7 +3,7 @@ from playwright.sync_api import sync_playwright
 import imageio_ffmpeg
 ff=imageio_ffmpeg.get_ffmpeg_exe()
 people=[("aeon","Aeon Bonjé","left"),("rune","Rune Vanhoucke","center"),("arno","Arno Cuyvers","right")]
-root=pathlib.Path('/tmp/claude-0/pop');out=root/'out';out.mkdir(exist_ok=True)
+root=pathlib.Path('/home/user/SDWorx_brand/popups');out=root/'out';out.mkdir(exist_ok=True)
 with sync_playwright() as p:
     b=p.chromium.launch(executable_path='/opt/pw-browsers/chromium-1194/chrome-linux/chrome') if os.path.exists('/opt/pw-browsers/chromium-1194/chrome-linux/chrome') else p.chromium.launch()
     pg=b.new_page(viewport={'width':1920,'height':1080})
