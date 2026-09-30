@@ -1,0 +1,151 @@
+/*
+ * SD Worx — design tokens (afgeleid van het "Ignite" design system, v2.2.0)
+ * Bron: https://cdn.sdworx.com/ignite/styling/v2/2.2.0/website/system.css
+ * Prefix --sdw- om conflicten te vermijden met het originele --ig- prefix.
+ * Waarden zijn 1-op-1 overgenomen; light-dark() geeft licht/donker thema.
+ */
+
+/* Lettertypes: gehost door SD Worx (Inter + SD Worx Display VF). */
+@import url("https://cdn.sdworx.com/ignite/assets/v2/fonts/all.css");
+
+:root {
+  color-scheme: light dark;
+
+  /* ── Merk (logo) ─────────────────────────────── */
+  --sdw-brand-blue: #006dd8;
+  --sdw-brand-red: #f1002f;
+  --sdw-brand-yellow: #ffbe00;
+
+  /* ── Primary (blauw) ─────────────────────────── */
+  --sdw-primary-950: #000d3a;
+  --sdw-primary-900: #001c52;
+  --sdw-primary-700: #005bbf;
+  --sdw-primary-600: #006dd8; /* = merkblauw, standaard knop/link */
+  --sdw-primary-500: #0087f3;
+  --sdw-primary-300: #9ed2ff;
+  --sdw-primary-100: #d9f1ff;
+  --sdw-primary-50: #effaff;
+
+  /* ── Neutraal ────────────────────────────────── */
+  --sdw-neutral-950: #050607;
+  --sdw-neutral-900: #131415;
+  --sdw-neutral-800: #212223;
+  --sdw-neutral-700: #323334;
+  --sdw-neutral-600: #444547;
+  --sdw-neutral-500: #5a5b5c;
+  --sdw-neutral-400: #737476;
+  --sdw-neutral-350: #88898b;
+  --sdw-neutral-200: #d9dbdd;
+  --sdw-neutral-150: #eaebed;
+  --sdw-neutral-100: #f4f5f6;
+  --sdw-neutral-50: #fbfcfc;
+  --sdw-white: #fff;
+
+  /* Website-specifiek (Next.js site) */
+  --sdw-site-text: #303642;     /* bodytekst homepage */
+  --sdw-site-cta-dark: #040d14; /* "Contact"-knop */
+
+  /* ── Semantisch ──────────────────────────────── */
+  --sdw-info: light-dark(#006aff, #8fbeff);
+  --sdw-success: light-dark(#007900, #75d87a);
+  --sdw-warning: #f3b01d;
+  --sdw-danger: light-dark(#e90040, #ff979d);
+
+  /* ── Thema-rollen ────────────────────────────── */
+  --sdw-bg-page: light-dark(#fff, #131415);
+  --sdw-bg-subtle: light-dark(#fbfcfc, #212223);   /* kaarten */
+  --sdw-bg-soft: light-dark(#f4f5f6, #323334);
+  --sdw-bg-medium: light-dark(#d9dbdd, #444547);
+  --sdw-bg-strong: light-dark(#131415, #f4f5f6);
+
+  --sdw-text-strong: light-dark(#050607, #fbfcfc);
+  --sdw-text-bold: light-dark(#323334, #f4f5f6);
+  --sdw-text-medium: light-dark(#5a5b5c, #eaebed);
+  --sdw-text-soft: light-dark(#737476, #d9dbdd);
+  --sdw-text-primary: light-dark(#005bbf, #9ed2ff);
+  --sdw-text-inverse: light-dark(#fff, #212223);
+
+  --sdw-action: light-dark(#006dd8, #9ed2ff);
+  --sdw-action-hover: light-dark(#0087f3, #d9f1ff);
+  --sdw-action-pressed: light-dark(#005bbf, #0087f3);
+  --sdw-action-subtle: light-dark(#effaff, #000d3a);
+  --sdw-action-soft: light-dark(#d9f1ff, #001c52);
+
+  --sdw-border-subtle: light-dark(#f4f5f6, #212223);
+  --sdw-border-bold: #737476;
+
+  /* ── Accentkleuren 0–13 (bold / subtle-licht / tekst-licht) ── */
+  --sdw-accent-0: #da3300;  --sdw-accent-0-subtle: #fff4ef;  --sdw-accent-0-text: #750000;
+  --sdw-accent-1: #ffa659;  --sdw-accent-1-subtle: #fff6eb;  --sdw-accent-1-text: #5f2900;
+  --sdw-accent-2: #8e7a00;  --sdw-accent-2-subtle: #fbf9ea;  --sdw-accent-2-text: #463a00;
+  --sdw-accent-3: #b2cb5c;  --sdw-accent-3-subtle: #f6fbec;  --sdw-accent-3-text: #344100;
+  --sdw-accent-4: #009559;  --sdw-accent-4-subtle: #eefdf4;  --sdw-accent-4-text: #004a26;
+  --sdw-accent-5: #23dbc1;  --sdw-accent-5-subtle: #ebfdf9;  --sdw-accent-5-text: #00483c;
+  --sdw-accent-6: #008e96;  --sdw-accent-6-subtle: #eafdfe;  --sdw-accent-6-text: #00464b;
+  --sdw-accent-7: #25d2fc;  --sdw-accent-7-subtle: #ebfcff;  --sdw-accent-7-text: #004359;
+  --sdw-accent-8: #0083ce;  --sdw-accent-8-subtle: #edfbff;  --sdw-accent-8-text: #003f6c;
+  --sdw-accent-9: #aeb4ff;  --sdw-accent-9-subtle: #f5f7ff;  --sdw-accent-9-text: #312785;
+  --sdw-accent-10: #9051e1; --sdw-accent-10-subtle: #faf6ff; --sdw-accent-10-text: #491c7b;
+  --sdw-accent-11: #e59ff6; --sdw-accent-11-subtle: #fff4ff; --sdw-accent-11-text: #5a1069;
+  --sdw-accent-12: #cb2f90; --sdw-accent-12-subtle: #fff3fb; --sdw-accent-12-text: #6c0048;
+  --sdw-accent-13: #ff95ba; --sdw-accent-13-subtle: #fff3f8; --sdw-accent-13-text: #710037;
+
+  /* ── Data-visualisatie (categorisch) ─────────── */
+  --sdw-dataviz-1: #006dd8; --sdw-dataviz-2: #75001c; --sdw-dataviz-3: #00a38c;
+  --sdw-dataviz-4: #003f6c; --sdw-dataviz-5: #ac77fa; --sdw-dataviz-6: #710037;
+  --sdw-dataviz-7: #f05b93; --sdw-dataviz-8: #533300; --sdw-dataviz-9: #e67600;
+  --sdw-dataviz-10: #5e2b9a;
+
+  /* ── Typografie ──────────────────────────────── */
+  --sdw-font-heading: "SD Worx Display VF", "SD Worx Display", "SDWorx Display", sans-serif;
+  --sdw-font-body: Inter, "Inter Fallback", system-ui, sans-serif;
+  --sdw-font-mono: consolas, monospace;
+
+  --sdw-fw-light: 300; --sdw-fw-regular: 400; --sdw-fw-medium: 500;
+  --sdw-fw-semibold: 600; --sdw-fw-bold: 700;
+
+  /* schaal: font-size / line-height */
+  --sdw-display-1: 7.5rem;   --sdw-display-1-lh: 6.75rem;
+  --sdw-display-2: 4.5rem;   --sdw-display-2-lh: 4rem;
+  --sdw-h-xxl: 3rem;         --sdw-h-xxl-lh: 3.25rem;
+  --sdw-h-xl: 2.5rem;        --sdw-h-xl-lh: 2.75rem;
+  --sdw-h-l: 2rem;           --sdw-h-l-lh: 2.25rem;
+  --sdw-h-m: 1.75rem;        --sdw-h-m-lh: 1.875rem;
+  --sdw-h-s: 1.5rem;         --sdw-h-s-lh: 1.75rem;
+  --sdw-h-xs: 1.25rem;       --sdw-h-xs-lh: 1.5rem;
+  --sdw-h-xxs: 1.125rem;     --sdw-h-xxs-lh: 1.375rem;
+  --sdw-body-l: 1.25rem;     --sdw-body-l-lh: 1.75rem;
+  --sdw-body: 1.125rem;      --sdw-body-lh: 1.5rem;
+  --sdw-body-s: 1rem;        --sdw-body-s-lh: 1.375rem;
+  --sdw-body-xs: .875rem;    --sdw-body-xs-lh: 1.125rem;
+  --sdw-body-xxs: .75rem;    --sdw-body-xxs-lh: 1rem;
+  --sdw-caption: .75rem;     --sdw-caption-lh: 1rem;
+
+  /* ── Spacing (Ignite size-schaal) ────────────── */
+  --sdw-space-025: .25rem; --sdw-space-050: .375rem; --sdw-space-075: .5rem;
+  --sdw-space-100: .75rem; --sdw-space-150: 1rem;    --sdw-space-200: 1.25rem;
+  --sdw-space-250: 1.5rem; --sdw-space-300: 2rem;    --sdw-space-400: 2.5rem;
+  --sdw-space-500: 3rem;   --sdw-space-600: 4rem;    --sdw-space-800: 5rem;
+  --sdw-space-1000: 6rem;  --sdw-space-1200: 8rem;   --sdw-space-1600: 10rem;
+
+  /* ── Radius, schaduw, motion ─────────────────── */
+  --sdw-radius-small: 2px;
+  --sdw-radius: 4px;        /* knoppen, inputs, kaarten */
+  --sdw-radius-large: 8px;
+
+  --sdw-elevation-1: 0 0 3px 0 #04294114, 0 2px 6px -1px #04294133;
+  --sdw-elevation-2: 0 1px 8px 0 #0429411c, 0 5px 8px 0 #0429411a;
+  --sdw-elevation-3: 0 1px 8px 0 #0429411f, 0 6px 12px 0 #0429412b;
+  --sdw-elevation-4: 0 8px 24px 0 #04294133, 0 3px 8px 0 #0429411f;
+  --sdw-elevation-inset: inset 0 2px 2px 0 #04294114;
+
+  --sdw-duration: .25s;
+  --sdw-duration-fast: .1s;
+  --sdw-opacity-disabled: .4;
+
+  /* ── Layout ──────────────────────────────────── */
+  --sdw-container: 1224px;
+  --sdw-topbar-h: 48px;
+  --sdw-header-h: 80px;
+  /* breakpoints (min-width): 576 · 768 · 992 · 1200 · 1440 · 1912 */
+}
