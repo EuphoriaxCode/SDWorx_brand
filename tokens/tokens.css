@@ -16,6 +16,19 @@
   --sdw-brand-red: #f1002f;
   --sdw-brand-yellow: #ffbe00;
 
+  /* ── Nieuwe huisstijl 2026 (gemeten uit persbericht-beelden, ± kleurprofiel) ── */
+  --sdw-2026-sky-light: #b0dcff;
+  --sdw-2026-sky: #5eafff;
+  --sdw-2026-blue-mid: #278beb;
+  --sdw-2026-blue-deep: #004c9a;
+  --sdw-2026-frame-blue: #0055a0;
+  --sdw-2026-navy: #00235d;
+  --sdw-2026-panel: #a3d4ff;
+  --sdw-2026-photo-bg: #6f95aa;
+  --sdw-2026-mesh: radial-gradient(ellipse at 50% 50%, #e7f3ff 0%, #add7fd 100%);
+  --sdw-2026-chip-radius: 16px;
+  --sdw-2026-chip-tilt: -4deg;
+
   /* ── Primary (blauw) ─────────────────────────── */
   --sdw-primary-950: #000d3a;
   --sdw-primary-900: #001c52;

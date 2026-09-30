@@ -5,7 +5,7 @@ Het is **afgeleid van de publieke website** [sdworx.be/nl-be](https://www.sdworx
 design system dat SD Worx zelf publiek host (**"Ignite"**, `cdn.sdworx.com/ignite`). Kleurcodes,
 lettergroottes, radius en spacing zijn rechtstreeks uit hun CSS gehaald, niet geschat.
 
-> ⚠️ Dit is geen officiële brand book. Voor externe publicatie, drukwerk of logogebruik door derden:
+> ⚠️ Dit is geen officiële brand book (SD Worx publiceert de volledige guidelines niet openbaar). Het bevat wel de nieuwe huisstijl van juni 2026 zoals beschreven en getoond in hun persbericht (§1b). Voor externe publicatie, drukwerk of logogebruik door derden:
 > vraag de officiële guidelines/assets aan bij SD Worx. Logo's en fonts zijn hun eigendom.
 
 | Bestand | Inhoud |
@@ -31,6 +31,38 @@ lettergroottes, radius en spacing zijn rechtstreeks uit hun CSS gehaald, niet ge
 Payroll · Tijd & administratie · Belonen · HR-expertise · SAP-oplossingen. Doelgroepen: kmo, grote organisaties,
 internationale organisaties, boekhouders & accountants, zelfstandigen. Sub-merken: **.academy**, **mysdworx** (app), **SD Worx Compass**, **SD Worx Jobs**.
 
+## 1b. Nieuwe huisstijl — juni 2026 (bron: persbericht)
+
+Bron: [A new look for SD Worx](https://www.sdworx.com/en-en/about-sd-worx/press/2026-06-25-new-look-sd-worx-introducing-brand-makes-work-work) (25 juni 2026). Het persbericht beschrijft: *nieuwe kleuren, een flexibeler logosysteem, een duidelijkere visuele taal, vernieuwde typografie en een consistente digitale ervaring; een systeem dat schaalt over producten, content en markten.*
+
+![overzicht nieuwe stijl](docs/press-2026-overview.jpg)
+
+**Merkidee en positionering**
+- Kernidee: **"SD Worx makes work work."** — werkgevers, werknemers en regelgeving op één lijn brengen via intelligente HR-, Pay- en Time-oplossingen, zodat organisaties met vertrouwen vooruit kunnen.
+- Rol: **"Europe's backbone of work"** en *"the work behind work"* — het onzichtbare maar essentiële dat werk draaiend houdt.
+- Ambitie: **Europe's leading HR, Pay and Time partner.**
+- Vier pijlers: **intelligent technology · deep expertise · reliable delivery · local knowledge.**
+- Ontwerpkarakter (citaat Justine Kerr, Creative Agency Lead): het design system is **"fluid, connected, and modern. Built to move with the world"**.
+- Kerncijfers (2025/2026): **100.000+ organisaties · 6 miljoen werknemers betaald per maand · omzet EUR 1,3 miljard (2025).**
+
+**Wat je in het visuele materiaal ziet**
+1. **Logo op effen blauwe tegel** (`≈ #0076DA` in het persbeeld) met wit logo; kleurlogo op wit. Het logo is dus flexibel: blauw vlak, wit, of kleur.
+2. **Palet als gestapelde strook**: lichtblauw → hemelblauw → **diep marine** → **rood** → **geel** → wit.
+   Gemeten (JPEG, ± kleurprofiel): `#B0DCFF` · `#5EAFFF` · `#00235D` · `#F1002F` · `#FFBE00`. Rood en geel zijn hier duidelijk **kleine accenten**, marine/blauw domineren.
+3. **Gestapelde gradiënt-kaarten**: blauw → geel → bijna-zwart marine, met zachte, glanzende verlopen (glossy/frosted). Achtergrond: zacht **lichtblauw** (`≈ #A3D4FF`).
+4. **Zachte mesh-gradiënt achtergronden**: wit ↔ lichtblauw (`#E7F3FF` → `#ADD7FD`) met quote in **zwart + één woord in merkblauw** ("Built for how **Europe** works.").
+5. **Sticker-chips**: schuin gedraaide pill-labels (radius ≈ 16 px) in **blauw / rood / geel** die over grote zwarte koppen heen "plakken" ("More connected" + *Data*, *Network*, *Clarity*). Tekst in chips: SD Worx Display, wit op blauw/rood, **zwart op geel**.
+6. **Gewichtsspel als merkelement**: dezelfde woorden van **Light → Bold** in een blauwverloop (`#B6DCFF` → `#5EAFFF` → `#278BEB` → `#004C9A` → `#000`) — "bolder". Koppen mengen gewichten: *"Connecting **HR, Pay** and **Time** across Europe"* (kernwoorden bold).
+7. **Fotografie**: portretten met **blauwgrijs fond** (`≈ #6F95AA`), donkermarine kleding, **gele tablet/map** als kleuraccent; foto vaak **uitgesneden in een veelhoek/schuine vorm** binnen een wit kader op een blauw vlak (`≈ #0055A0`), of geknipte studio-portretten.
+8. **UI-motieven**: zwarte pill-tooltip met cursor ("Payroll Admin"), **cirkelpijl-icoon** (omcirkeld →/←), dun omlijnde kaart met blauwe rand (1 px, radius ≈ 8–12 px).
+9. **Datavisualisatie**: gerande, **afgeronde staven** in lichtblauw (`#66B4FF`) met de **actieve staaf in merkblauw**, een gladde lijn in blauw en een datapunt-label; assen in Inter, klein en grijs.
+
+![built for Europe](docs/press-2026-built-for-europe.jpg)
+![more connected](docs/press-2026-more-connected.jpg)
+![bolder](docs/press-2026-bolder.jpg)
+
+> Kleurwaarden uit afbeeldingen zijn **gemeten op JPEG's met kleurprofiel** en dus ± enkele eenheden. De live-website-tokens in §3 (`#006DD8`, `#F1002F`, `#FFBE00`) blijven leidend voor code; in beeldmateriaal mag het blauw iets helderder ogen.
+
 ---
 
 ## 2. Logo
@@ -41,7 +73,8 @@ internationale organisaties, boekhouders & accountants, zelfstandigen. Sub-merke
 - Logokleuren: **Blauw `#006DD8`**, **Rood `#F1002F`**, **Geel `#FFBE00`**; woordmerk in **zwart/donkergrijs**.
 - Varianten in deze repo: `sdworx-logo.svg` (kleur, op wit/licht) en `sdworx-logo-white.svg` (wit, op donker of foto's).
 - Formaat origineel: 128 × 41 (verhouding ≈ 3,1 : 1). Op de site staat het 127 px breed in een 80 px hoge header.
-- **Regels (aanbevolen)**: vrije ruimte rondom ≥ hoogte van de "s"; niet vervormen, niet herkleuren, niet op drukke achtergronden zonder wit logo; minimaal ≈ 96 px breed op scherm.
+- **Uit het persbericht**: het logo is nu een *flexibel systeem* — kleurenversie op wit, wit logo op een effen blauwe tegel (zie §1b).
+- **Regels (aanbevolen, eigen inschatting)**: vrije ruimte rondom ≥ hoogte van de "s"; niet vervormen, niet herkleuren, niet op drukke achtergronden zonder wit logo; minimaal ≈ 96 px breed op scherm.
 - De **schuine strepen** zijn het grafische DNA: ze komen terug in de diagonale sneden van beelden en secties (zie §7).
 
 ---
@@ -105,7 +138,7 @@ Ruim **wit/licht (±80 %)**, **neutraal donker voor tekst (±12 %)**, **SD Worx-
 | **Body / UI / captions** | **Inter** (variabel 100–900) | idem (of Google Fonts) |
 | Mono | `consolas` | fallback |
 
-Karakter van de koppen: geometrisch, open en vriendelijk (enkelvoudige "a" en "y" met rechte staart), **sentence case**, veel wit, medium gewicht.
+Nieuwe typografie (2026): koppen gebruiken een **groot gewichtsbereik (Light → Bold)** en mengen gewichten binnen één kop; body blijft Inter. Karakter van de koppen: geometrisch, open en vriendelijk (enkelvoudige "a" en "y" met rechte staart), **sentence case**, veel wit, medium gewicht.
 
 ### Schaal (rem; 1rem = 16 px) — font-size / line-height
 | Stijl | Grootte | Line-height | Opmerking |
@@ -190,6 +223,7 @@ Overline/label boven een kop ("Oplossingen") = Body, regular, grijs, kleine lett
 - **CTA's**: "Ontdek alles", "Meer weten", "Contacteer ons", "Lees het klantverhaal", "Schrijf je in".
 - **Bewijs boven belofte**: cijfers (100.000 bedrijven, 19 systemen) en klantquotes met naam, functie en bedrijf.
 - **Schrijfwijze**: "hr" en "kmo" in kleine letters; Engelse merkzinnen (*Trusted to make work work*, *HR, Pay & Time*) blijven Engels.
+- **Woordkeuze 2026**: *connected, backbone, confidence/vertrouwen, clarity, Europe*; korte, stellige slogans: *"Built for how Europe works."*, *"More connected."*, *"Connecting HR, Pay and Time across Europe"*.
 - **Vermijd**: overdreven marketingtaal, hype, humor over personeel/loon, "u".
 
 ---
@@ -215,11 +249,12 @@ Zie [`examples/index.html`](examples/index.html) voor een volledige pagina.
 - [ ] Portretfoto's met blauw/grijs fond + diagonale sneden
 - [ ] Logo in kleur op licht, wit op donker/foto; vaste header van 80 px
 - [ ] Je-vorm, concreet, met cijfers en klantquotes
+- [ ] Sticker-chips (blauw/rood/geel), gewichtsspel in koppen en zachte lichtblauwe gradiënt-achtergronden voor de 2026-look
 - [ ] Licht én donker thema via `light-dark()` tokens
 
 ## 10. Bronnen & herkomst
 - Homepage [sdworx.be/nl-be](https://www.sdworx.be/nl-be) (HTML, CSS, screenshots, computed styles)
 - Ignite design system: `cdn.sdworx.com/ignite/styling/v2/2.2.0/website/system.css`, `…/assets/v2/fonts/all.css`, `…/visuals/v2/2.3.0/all.css`
-- Persbericht [A new look for SD Worx (25 juni 2026)](https://www.sdworx.com/en-en/about-sd-worx/press/2026-06-25-new-look-sd-worx-introducing-brand-makes-work-work) — nieuwe kleuren, flexibeler logosysteem, nieuwe typografie (de tekst zelf kon niet opgehaald worden; waarden in dit document komen uit de live CSS).
+- Persbericht [A new look for SD Worx (25 juni 2026)](https://www.sdworx.com/en-en/about-sd-worx/press/2026-06-25-new-look-sd-worx-introducing-brand-makes-work-work), aangeleverd als PDF — bron voor §1b (merkidee, pijlers, cijfers en de beelden in `docs/press-2026-*.jpg`, © SD Worx). Kleur- en typografiewaarden voor code komen uit de live CSS.
 
 *Vastgelegd op 30 september 2026. Merkidentiteiten evolueren: controleer de live site bij twijfel.*
