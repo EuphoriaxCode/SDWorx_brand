@@ -1,0 +1,97 @@
+/*
+ * SD Worx — basiscomponenten. Vereist tokens.css (laad die eerst).
+ * Klassen met prefix `sdw-`. Kopieer/gebruik zoals ze zijn; wijzig waarden via tokens.
+ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:400 var(--sdw-body)/var(--sdw-body-lh) var(--sdw-font-body);color:var(--sdw-site-text);background:var(--sdw-bg-page);-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--sdw-font-heading);font-weight:500;color:var(--sdw-neutral-700);margin:0}
+h1{font-size:var(--sdw-h-xxl);line-height:var(--sdw-h-xxl-lh)}
+h2{font-size:var(--sdw-h-xl);line-height:var(--sdw-h-xl-lh)}
+h3{font-size:var(--sdw-h-l);line-height:var(--sdw-h-l-lh)}
+h4{font-size:var(--sdw-h-s);line-height:var(--sdw-h-s-lh)}
+p{margin:0 0 1em}
+a{color:var(--sdw-text-primary)}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--sdw-action);outline-offset:2px;border-radius:var(--sdw-radius)}
+
+/* Layout */
+.sdw-container{max-width:var(--sdw-container);margin:0 auto;padding:0 24px}
+.sdw-section{padding:64px 0}
+@media(min-width:992px){.sdw-section{padding:96px 0}}
+.sdw-grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.sdw-eyebrow{color:var(--sdw-text-medium);font-size:var(--sdw-body-s);margin-bottom:8px;display:block}
+.sdw-lead{font-size:var(--sdw-body-l);line-height:var(--sdw-body-l-lh);color:var(--sdw-text-medium)}
+
+/* Header */
+.sdw-topbar{background:#f6f6f6;font-size:var(--sdw-body-s)}
+.sdw-topbar .sdw-container{display:flex;justify-content:space-between;align-items:center;min-height:var(--sdw-topbar-h)}
+.sdw-header{background:#fff;border-bottom:1px solid var(--sdw-neutral-150);position:sticky;top:0;z-index:10}
+.sdw-header .sdw-container{display:flex;align-items:center;gap:40px;min-height:var(--sdw-header-h)}
+.sdw-header img{width:127px;height:auto}
+.sdw-nav{display:flex;gap:32px;flex:1;font-size:var(--sdw-body-s)}
+.sdw-nav a{color:var(--sdw-site-text);text-decoration:none}
+.sdw-nav a:hover{color:var(--sdw-action)}
+@media(max-width:991px){.sdw-nav{display:none}.sdw-header .sdw-container{justify-content:space-between}}
+
+/* Buttons */
+.sdw-btn{display:inline-flex;align-items:center;gap:8px;font:500 var(--sdw-body-s)/1.25 var(--sdw-font-body);text-decoration:none;cursor:pointer;border:1px solid transparent;border-radius:var(--sdw-radius);padding:10px 20px;transition:background var(--sdw-duration),border-color var(--sdw-duration),color var(--sdw-duration)}
+.sdw-btn--primary{background:var(--sdw-action);border-color:var(--sdw-action);color:#fff}
+.sdw-btn--primary:hover{background:var(--sdw-action-hover);border-color:var(--sdw-action-hover)}
+.sdw-btn--primary:active{background:var(--sdw-action-pressed)}
+.sdw-btn--dark{background:var(--sdw-site-cta-dark);color:#fff;padding:6px 12px}
+.sdw-btn--white{background:#fff;border-color:#fff;color:var(--sdw-neutral-700);font-size:var(--sdw-body-l)}
+.sdw-btn--white:hover{background:var(--sdw-primary-50)}
+.sdw-btn--outline{background:transparent;border-color:var(--sdw-action);color:var(--sdw-text-primary)}
+.sdw-btn--outline:hover{background:var(--sdw-action-subtle)}
+.sdw-btn[disabled]{opacity:var(--sdw-opacity-disabled);pointer-events:none}
+.sdw-link{color:var(--sdw-neutral-700);text-decoration:none;border-bottom:1px solid var(--sdw-neutral-150);padding-bottom:4px}
+.sdw-link::after{content:" ↗"}
+.sdw-link:hover{border-color:var(--sdw-action);color:var(--sdw-action)}
+
+/* Hero (foto/blauw vlak + wit display-kop + diagonale onderrand) */
+.sdw-hero{position:relative;color:#fff;background:var(--sdw-site-hero-blue) center/cover;min-height:560px;display:flex;align-items:center;clip-path:polygon(0 0,100% 0,100% 88%,48% 100%,0 96%)}
+.sdw-hero .sdw-container{width:100%}
+.sdw-hero h1{color:#fff;font-size:clamp(3.5rem,9vw,var(--sdw-display-1));line-height:.92;margin-bottom:24px}
+.sdw-hero p{font-family:var(--sdw-font-heading);font-size:var(--sdw-body-l);margin-bottom:32px}
+
+/* Kaart met diagonale notch onder het beeld */
+.sdw-card{background:var(--sdw-bg-subtle);border:1px solid var(--sdw-neutral-150);border-radius:var(--sdw-radius);overflow:hidden;display:flex;flex-direction:column}
+.sdw-card__img{aspect-ratio:2/1;object-fit:cover;width:100%;background:linear-gradient(135deg,var(--sdw-primary-600),var(--sdw-primary-900));clip-path:polygon(0 0,100% 0,100% 100%,71% 100%,59% 93%,0 93%)}
+.sdw-card__body{padding:32px;display:flex;flex-direction:column;gap:16px;flex:1}
+.sdw-card__body p{color:var(--sdw-text-medium);margin:0}
+.sdw-quote{border-top:1px solid var(--sdw-neutral-150);padding-top:24px;color:var(--sdw-text-medium)}
+.sdw-quote small{display:block;font-size:var(--sdw-body-xxs);color:var(--sdw-text-soft)}
+
+/* Kaart 2026-stijl: dunne blauwe rand, iets grotere radius */
+.sdw-panel{border:1px solid var(--sdw-action);border-radius:12px;padding:32px;background:#fff}
+
+/* Sticker-chips (2026) — plak ze schuin over grote koppen */
+.sdw-chip{display:inline-block;padding:10px 18px;border-radius:var(--sdw-2026-chip-radius);font:500 var(--sdw-body-s)/1 var(--sdw-font-heading);transform:rotate(var(--sdw-2026-chip-tilt))}
+.sdw-chip--blue{background:var(--sdw-brand-blue);color:#fff}
+.sdw-chip--red{background:var(--sdw-brand-red);color:#fff;transform:rotate(3deg)}
+.sdw-chip--yellow{background:var(--sdw-brand-yellow);color:#000;transform:rotate(-3deg)}
+
+/* Zachte gradiënt-achtergrond (2026) en donkere sectie */
+.sdw-mesh{background:var(--sdw-2026-mesh)}
+.sdw-dark{background:var(--sdw-primary-900);color:#fff}
+.sdw-dark h1,.sdw-dark h2,.sdw-dark h3{color:#fff}
+
+/* Statistiek */
+.sdw-stat strong{display:block;font:500 var(--sdw-display-2)/1 var(--sdw-font-heading)}
+.sdw-stat span{opacity:.85}
+
+/* Gewichtsspel: light → bold in blauwverloop */
+.sdw-weights span{display:block;font:300 4rem/1.1 var(--sdw-font-heading)}
+.sdw-weights span:nth-child(2){font-weight:400;color:var(--sdw-2026-sky)}
+.sdw-weights span:nth-child(3){font-weight:500;color:var(--sdw-2026-blue-mid)}
+.sdw-weights span:nth-child(4){font-weight:700;color:var(--sdw-2026-blue-deep)}
+.sdw-weights span:nth-child(5){font-weight:900;color:#000}
+
+/* Formulier */
+.sdw-input{font:400 var(--sdw-body-s)/1.25 var(--sdw-font-body);padding:10px 12px;border:1px solid var(--sdw-neutral-350);border-radius:var(--sdw-radius);background:#fff;color:var(--sdw-site-text);width:100%}
+.sdw-input:focus{outline:2px solid var(--sdw-action);border-color:var(--sdw-action)}
+
+/* Footer */
+.sdw-footer{background:var(--sdw-neutral-900);color:var(--sdw-neutral-200);padding:48px 0;font-size:var(--sdw-body-xs)}
+.sdw-footer a{color:inherit}

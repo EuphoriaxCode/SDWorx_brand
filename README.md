@@ -13,7 +13,9 @@ lettergroottes, radius en spacing zijn rechtstreeks uit hun CSS gehaald, niet ge
 | [`tokens/tokens.css`](tokens/tokens.css) | Alle tokens als CSS-variabelen (`--sdw-*`), incl. licht/donker |
 | [`tokens/tokens.json`](tokens/tokens.json) | Dezelfde tokens als JSON |
 | [`brand/logo/`](brand/logo) | Logo (kleur) en logo (wit) als SVG |
-| [`examples/index.html`](examples/index.html) | Voorbeeldpagina in SD Worx-stijl (hero, kaarten, USP's, knoppen) |
+| [`tokens/components.css`](tokens/components.css) | Basiscomponenten (`.sdw-*`) |
+| [`CLAUDE.md`](CLAUDE.md) | Instructies voor Claude bij het bouwen in deze stijl (hackathon) |
+| [`examples/index.html`](examples/index.html) | Voorbeeldpagina in SD Worx-stijl |
 | [`docs/`](docs) | Screenshots van de homepage als referentie |
 
 ---

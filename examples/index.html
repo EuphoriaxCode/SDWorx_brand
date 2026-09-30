@@ -5,76 +5,48 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SD Worx stijl — voorbeeld</title>
 <link rel="stylesheet" href="../tokens/tokens.css">
-<style>
-  *{box-sizing:border-box}
-  body{margin:0;font:400 var(--sdw-body)/var(--sdw-body-lh) var(--sdw-font-body);color:var(--sdw-site-text);background:var(--sdw-bg-page)}
-  h1,h2,h3{font-family:var(--sdw-font-heading);font-weight:500;margin:0}
-  a{color:inherit}
-  .wrap{max-width:var(--sdw-container);margin:0 auto;padding:0 24px}
-  .topbar{background:#f6f6f6;height:var(--sdw-topbar-h);font-size:var(--sdw-body-s)}
-  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:100%}
-  header{height:var(--sdw-header-h);border-bottom:1px solid var(--sdw-neutral-150);background:#fff}
-  header .wrap{display:flex;align-items:center;gap:40px;height:100%}
-  header img{width:127px}
-  nav{display:flex;gap:32px;font-size:var(--sdw-body-s);flex:1}
-  nav a{text-decoration:none}
-  .btn{display:inline-block;text-decoration:none;font-weight:500;border-radius:var(--sdw-radius);padding:7px 16px;border:1px solid transparent;transition:background var(--sdw-duration)}
-  .btn-primary{background:var(--sdw-action);color:#fff}
-  .btn-primary:hover{background:var(--sdw-action-hover)}
-  .btn-dark{background:var(--sdw-site-cta-dark);color:#fff;font-size:var(--sdw-body-s);padding:6px 12px}
-  .btn-white{background:#fff;color:var(--sdw-neutral-700);font-size:var(--sdw-body-l)}
-  .hero{background:#3b78ad;color:#fff;min-height:620px;display:flex;align-items:center;clip-path:polygon(0 0,100% 0,100% 88%,48% 100%,0 96%)}
-  .hero .wrap{width:100%}
-  .hero h1{font-size:clamp(3.5rem,9vw,var(--sdw-display-1));line-height:.95;margin-bottom:32px}
-  .hero p{font-family:var(--sdw-font-heading);font-size:var(--sdw-body-l);margin:0 0 32px}
-  .eyebrow{color:var(--sdw-neutral-500)}
-  section{padding:96px 0}
-  section h2{font-size:var(--sdw-h-xxl);line-height:var(--sdw-h-xxl-lh);max-width:14ch;margin:8px 0 48px}
-  .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-  .card{background:var(--sdw-bg-subtle);border:1px solid var(--sdw-neutral-150);border-radius:var(--sdw-radius);overflow:hidden}
-  .card .img{height:200px;background:linear-gradient(135deg,var(--sdw-primary-600),var(--sdw-primary-900));clip-path:polygon(0 0,100% 0,100% 100%,71% 100%,59% 93%,0 93%)}
-  .card .body{padding:32px}
-  .card h3{font-size:var(--sdw-h-l);line-height:var(--sdw-h-l-lh);margin-bottom:16px}
-  .card p{color:var(--sdw-text-medium);margin:0 0 24px}
-  .more{text-decoration:none;border-bottom:1px solid var(--sdw-neutral-150);padding-bottom:4px;color:var(--sdw-neutral-700)}
-  .stats{background:var(--sdw-primary-900);color:#fff}
-  .stats .grid strong{display:block;font:500 var(--sdw-display-2)/1 var(--sdw-font-heading)}
-  footer{background:var(--sdw-neutral-900);color:var(--sdw-neutral-200);padding:48px 0;font-size:var(--sdw-body-xs)}
-</style>
+<link rel="stylesheet" href="../tokens/components.css">
 </head>
 <body>
-<div class="topbar"><div class="wrap"><span>HR &amp; Payroll &nbsp;·&nbsp; .academy</span><span>Support &nbsp;·&nbsp; Aanmelden</span></div></div>
-<header><div class="wrap">
+<div class="sdw-topbar"><div class="sdw-container"><span>HR &amp; Payroll &nbsp;·&nbsp; .academy</span><span>Support &nbsp;·&nbsp; Aanmelden</span></div></div>
+<header class="sdw-header"><div class="sdw-container">
   <img src="../brand/logo/sdworx-logo.svg" alt="SD Worx">
-  <nav><a href="#">Oplossingen</a><a href="#">Wie helpen we?</a><a href="#">Inzichten</a><a href="#">Over SD Worx</a></nav>
-  <a class="btn btn-dark" href="#">Contact</a>
+  <nav class="sdw-nav"><a href="#">Oplossingen</a><a href="#">Wie helpen we?</a><a href="#">Inzichten</a><a href="#">Over SD Worx</a></nav>
+  <a class="sdw-btn sdw-btn--dark" href="#">Contact</a>
 </div></header>
 
-<div class="hero"><div class="wrap">
+<div class="sdw-hero"><div class="sdw-container">
   <h1>HR, Pay &amp;<br>Time</h1>
   <p>Voor ieder team, in elke organisatie</p>
-  <a class="btn btn-white" href="#">Ontdek alles</a>
+  <a class="sdw-btn sdw-btn--white" href="#">Ontdek alles</a>
 </div></div>
 
-<section><div class="wrap">
-  <span class="eyebrow">Oplossingen</span>
-  <h2>Een partner voor HR, Pay &amp; Time</h2>
-  <div class="grid">
-    <article class="card"><div class="img"></div><div class="body"><h3>Payroll</h3><p>Loonverwerking is een administratieve uitdaging. Wij organiseren je verloningsproces correct, efficiënt en juridisch waterdicht.</p><a class="more" href="#">Meer weten ↗</a></div></article>
-    <article class="card"><div class="img"></div><div class="body"><h3>Tijd &amp; administratie</h3><p>Personeelsplanning, administratie en tijdsregistratie. Optimaliseer je tijd en personeel.</p><a class="more" href="#">Meer weten ↗</a></div></article>
-    <article class="card"><div class="img"></div><div class="body"><h3>Belonen</h3><p>Beloon je medewerkers en behoud je grip op kosten met strategisch beloningsbeleid.</p><a class="more" href="#">Meer weten ↗</a></div></article>
+<section class="sdw-section"><div class="sdw-container">
+  <span class="sdw-eyebrow">Oplossingen</span>
+  <h2 style="max-width:14ch;margin-bottom:48px">Een partner voor HR, Pay &amp; Time</h2>
+  <div class="sdw-grid">
+    <article class="sdw-card"><div class="sdw-card__img"></div><div class="sdw-card__body"><h3>Payroll</h3><p>Loonverwerking is een administratieve uitdaging. Wij organiseren je verloningsproces correct, efficiënt en juridisch waterdicht.</p><a class="sdw-link" href="#" style="align-self:flex-start">Meer weten</a></div></article>
+    <article class="sdw-card"><div class="sdw-card__img"></div><div class="sdw-card__body"><h3>Tijd &amp; administratie</h3><p>Personeelsplanning, administratie en tijdsregistratie. Optimaliseer je tijd en personeel.</p><a class="sdw-link" href="#" style="align-self:flex-start">Meer weten</a></div></article>
+    <article class="sdw-card"><div class="sdw-card__img"></div><div class="sdw-card__body"><h3>Belonen</h3><p>Beloon je medewerkers en behoud je grip op kosten met strategisch beloningsbeleid.</p><a class="sdw-link" href="#" style="align-self:flex-start">Meer weten</a></div></article>
   </div>
 </div></section>
 
-<section class="stats"><div class="wrap">
-  <span style="opacity:.8">Trusted to</span>
-  <h2 style="max-width:none">make work work</h2>
-  <div class="grid">
-    <div><strong>100.000+</strong>bedrijven</div><div><strong>19</strong>payroll-systemen in Europa</div><div><strong>1</strong>partner, van kmo tot multinational</div>
-  </div>
-  <p style="margin-top:48px"><a class="btn btn-primary" href="#">Contacteer ons</a></p>
+<section class="sdw-section sdw-mesh"><div class="sdw-container" style="text-align:center">
+  <h2 style="font-size:clamp(2.5rem,7vw,var(--sdw-display-2));line-height:1.05">More connected</h2>
+  <p style="margin-top:24px"><span class="sdw-chip sdw-chip--blue">Data</span> <span class="sdw-chip sdw-chip--red">Network</span> <span class="sdw-chip sdw-chip--yellow">Clarity</span></p>
 </div></section>
 
-<footer><div class="wrap">© SD Worx 2026 · Voorbeeldpagina in SD Worx-stijl (geen officiële pagina)</div></footer>
+<section class="sdw-section sdw-dark"><div class="sdw-container">
+  <span class="sdw-eyebrow" style="color:#fff;opacity:.8">Trusted to</span>
+  <h2 style="margin-bottom:48px">make work work</h2>
+  <div class="sdw-grid">
+    <div class="sdw-stat"><strong>100.000+</strong><span>bedrijven</span></div>
+    <div class="sdw-stat"><strong>19</strong><span>payroll-systemen in Europa</span></div>
+    <div class="sdw-stat"><strong>6 mln</strong><span>werknemers betaald per maand</span></div>
+  </div>
+  <p style="margin-top:48px"><a class="sdw-btn sdw-btn--primary" href="#">Contacteer ons</a></p>
+</div></section>
+
+<footer class="sdw-footer"><div class="sdw-container">© SD Worx 2026 · Voorbeeldpagina in SD Worx-stijl (geen officiële pagina)</div></footer>
 </body>
 </html>
